@@ -9,7 +9,7 @@ import java.util.Scanner;
  * Resource: https://docs.oracle.com/javase/tutorial/datetime/iso/enum.html
  */
 
-public class JavaEasyJavaDateAndTime {
+public class EasyJavaDateAndTime {
 	public static String getDay(String day, String month, String year) {
 		/*
 		 * Write your code here.
