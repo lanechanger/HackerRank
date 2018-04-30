@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 /*
  * https://www.hackerrank.com/challenges/jumping-on-the-clouds-revisited/problem
  * Practice > Algorithms > Implementation > Jumping on the Clouds: Revisited
@@ -9,33 +8,28 @@ import java.util.Scanner;
  *
  */
 
-public class EasyJumpingOnTheClouds {
-
-	static int jumpingOnClouds(int[] c) {
+public class EasyJumpingOnTheCloudsRevisited {
+	static int jumpingOnClouds(int[] c, int k) {
 		// Complete this function
-		int results = 0;
-		for (int i = 0; i < c.length - 1;) {
-			// always try to jump by 2 if possible
-			if ((i + 2 < c.length) && (c[i + 2] == 0)) {
-				i += 2;
-
-			} else {
-				i++;
-			}
-			results++;
-		}
-		return results;
+		int n = c.length;
+		int result = 100;
+		int pos = 0;
+		do {
+			pos = (pos + k) % n;
+			result = (c[pos] == 0) ? result - 1 : result - 3;
+		} while (pos != 0);
+		return result;
 	}
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		int n = in.nextInt();
+		int k = in.nextInt();
 		int[] c = new int[n];
 		for (int c_i = 0; c_i < n; c_i++) {
 			c[c_i] = in.nextInt();
 		}
-
-		int result = jumpingOnClouds(c);
+		int result = jumpingOnClouds(c, k);
 		System.out.println(result);
 		in.close();
 	}
