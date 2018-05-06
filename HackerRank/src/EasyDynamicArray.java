@@ -6,6 +6,14 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
+/*
+ * https://www.hackerrank.com/challenges/dynamic-array/problem
+ * Practice > Data Structures > Arrays > Dynamic Array
+ * by Jeremy Ng (lanechanger)
+ * https://github.com/lanechanger
+ * https://www.hackerrank.com/jeremy_ng_86
+ *
+ */
 
 public class EasyDynamicArray {
 	/*
