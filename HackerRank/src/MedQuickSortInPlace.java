@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 /*
  * https://www.hackerrank.com/challenges/quicksort3/problem
- * Practice > Algorithms > Sorting > Quicksort In-Place
+ * Quicksort In-Place
  * by Jeremy Ng (lanechanger)
  * https://github.com/lanechanger
  * https://www.hackerrank.com/jeremy_ng_86
